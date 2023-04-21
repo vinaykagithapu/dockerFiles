@@ -1,7 +1,7 @@
 FROM ubuntu:20.04 AS base
 RUN apt update
 RUN apt install curl -y
-RUN curl -LO https://dl.k8s.io/release/v1.27.0/bin/linux/amd64/kubectl
+RUN curl -LO https://dl.k8s.io/release/v1.20.0/bin/linux/amd64/kubectl
 RUN curl -LO https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
 RUN tar -zxvf helm-v3.9.0-linux-amd64.tar.gz
 
