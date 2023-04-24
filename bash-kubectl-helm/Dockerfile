@@ -1,6 +1,4 @@
-FROM ubuntu:20.04 AS base
-RUN apt update
-RUN apt install curl -y
+FROM alpine/curl:3.14 AS base
 RUN curl -LO https://dl.k8s.io/release/v1.20.0/bin/linux/amd64/kubectl
 RUN curl -LO https://get.helm.sh/helm-v3.9.0-linux-amd64.tar.gz
 RUN tar -zxvf helm-v3.9.0-linux-amd64.tar.gz
